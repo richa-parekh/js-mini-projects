@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Theme Switcher</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100dvh;
+            margin: 0;
+            background: #ffffff;
+            color: #000;
+        }
+
+        body.dark {
+            background: #121212;
+            color: #fff;
+        }
+
+        #themeSwitch {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="themeSwitch">Light/ Dark</button>
+
+    <script>
+        // Get theme switch button
+        const themeSwitch = document.getElementById("themeSwitch");
+        if (!themeSwitch) {
+            console.error("Theme switch button not found!");
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        }
+
+        // Add event listeners
+        themeSwitch.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+            const isDark = document.body.classList.contains("dark");
+            if (isDark) {
+                localStorage.setItem("theme", "dark");
+                console.log("Switched to dark mode");
+            } else {
+                localStorage.setItem("theme", "light");
+                console.log("Switched to light mode");
+            }
+        });
+    </script>
+</body>
+
+</html>
