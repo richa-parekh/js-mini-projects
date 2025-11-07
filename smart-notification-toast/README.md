@@ -4,7 +4,7 @@ Build a smart notification toast system that displays temporary messages on a we
 
 ### The notification should:
 
-1. Appear with a message (e.g., “Profile updated successfully ✅”)
+1. Appear with a message (e.g., “ ✅ Profile updated successfully”)
 2. Auto-hide after a few seconds using setTimeout().
 3. Allow manual dismissal (click “×” to close early).
 4. Optionally, stack multiple toasts if triggered quickly.
