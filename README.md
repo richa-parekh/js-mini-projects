@@ -2,6 +2,7 @@
 JavaScript Mini Project to learn concepts in a structured and practical way.
 
 ## 👩‍💻Projects
-1. [Persistent Theme Switcher](persistent-theme-switcher)
-2. [Smart Notification Toast System](smart-notification-toast)
-3. [Smart Chat UI](smart-chat-ui)
+1. To understand `localStorage` ➡️ [Persistent Theme Switcher](persistent-theme-switcher)
+2. To understand `setTimeOut` ➡️ [Smart Notification Toast System](smart-notification-toast)
+3. To understand `<template>` tag ➡️ [Smart Chat UI](smart-chat-ui)
+4. To understand `Promise` ➡️ [Fake Weather Fetcher](fake-weather-fetcher)
