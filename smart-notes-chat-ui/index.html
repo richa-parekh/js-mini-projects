@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Chat UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container" id="chatContainer"></div>
+
+    <!-- User Message Template -->
+    <template id="userMessage">
+        <div class="message user">
+            <p class="text"></p>
+        </div>
+    </template>
+
+    <!-- AI Message Template -->
+    <template id="aiMessage">
+        <div class="message ai">
+            <p class="text"></p>
+        </div>
+    </template>
+
+    <!-- User Input Area -->
+    <div class="input-area">
+        <form id="userForm" class="input-form">
+            <input type="text" name="userInput" id="userInput" placeholder="Write your message...">
+            <p id="error"></p>
+            <button type="submit" id="sendBtn">Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
