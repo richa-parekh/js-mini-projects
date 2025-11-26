@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user card generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>👤 Random User Card Generator</h2>
+    <button id="btn">Get New User</button>
+    <div id="cardContainer"></div>
+    <template id="card">
+        <img src="" id="image" alt="User Image">
+        <h3 id="name"> 
+            <span id="first"></span> <span id="last"></span>
+        </h3>
+        <p class="location">
+            <span id="icon">📍</span>
+            <span id="city"></span>
+            <span id="country"></span>
+        </p>
+        <p id="contact">
+            <span id="icon">📧</span>
+            <span id="email"></span>
+        </p>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
